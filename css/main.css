@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial' 'sans-serif';
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url(../picture/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.form__check-label {
+    display: flex;
+    align-items: center;
+}
+.form__check-control {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.form__check-input:focus + .form__check-control {
+    box-shadow: 0 0 3px 2px black;
+    opacity: 0.4;
+}
+
+.form__check-input:checked + .form__check-control {
+    background-image: url(../picture/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.form__check-input:checked + .baskedbol {
+    background-image: url(../picture/basketball-ball.png);
+}
+
+.form__check-input:checked + .voleybol {
+    background-image: url(../picture/volleyball-ball.png);
+}
+
+.form__check-input:checked + .hokkey {
+    background-image: url(../picture/hockey-puck.png);
+}
+
+.form__check-input:checked ~ .form__check-text {
+    opacity: 0.4;
+}
+
+/* ==================form__radio============ */
+
+.form__radio-lable {
+    display: flex;
+    align-items: center;
+}
+
+.form__radio-control {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.form__radio-input:focus + .form__radio-control {
+    box-shadow: 0 0 3px 2px blue;
+    opacity: 0.6;
+}
+
+.form__radio-input:checked + .form__radio-control {
+    background-image: url(../picture/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.form__radio-input:checked + .baskedbol {
+    background-image: url(../picture/basketball-ball.png);
+}
+
+.form__radio-input:checked + .voleybol {
+    background-image: url(../picture/volleyball-ball.png);
+}
+
+.form__radio-input:checked + .hokkey {
+    background-image: url(../picture/hockey-puck.png);
+}
+
+.form__radio-input:checked ~ .form__radio-text {
+    opacity: 0.4;
+}
